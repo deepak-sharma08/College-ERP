@@ -3,9 +3,9 @@
     {% if request.user.user_type == '1' %}
     <!-- Brand Logo -->
     <a href="{% url 'admin_home' %}" class="brand-link">
-        <img src="{% static 'dist/img/virusx.png' %} " alt="SIGCE LOGO"
+        <img src="{% static 'dist/img/logo.jpg' %} " alt="SU LOGO"
             class="brand-image " >
-        <span class="brand-text font-weight-light" >SIGCE Admin Panel</span>
+        <span class="brand-text font-weight-light" >SU Admin Portal</span>
     </a>
 
     <!-- Sidebar -->
@@ -13,7 +13,7 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-                <img src="{{ request.user.profile_pic}}" class="img-circle elevation-2" alt="User Image">
+                <img src="{% static 'dist/img/user.png' %}" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
                 <a href="#" class="d-block">{{user}}</a>
@@ -298,9 +298,9 @@
                 {% elif request.user.user_type == '2' %}
                 <!-- Brand Logo -->
                 <a href="#" class="brand-link">
-                    <img src="{% static 'dist/img/virusx.png' %}" alt="AdminLTE Logo"
+                    <img src="{% static 'dist/img/logo.jpg' %}" alt="AdminLTE Logo"
                         class="brand-image " style="opacity: .8">
-                    <span class="brand-text font-weight-light">SIGCE Staff Panel</span>
+                    <span class="brand-text font-weight-light">SU Staff Panel</span>
                 </a>
 
                 <!-- Sidebar -->
@@ -308,7 +308,7 @@
                     <!-- Sidebar user panel (optional) -->
                     <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                         <div class="image">
-                            <img src="{{ request.user.profile_pic}}" class="img-circle elevation-2" alt="User Image">
+                            <img src="{% static 'dist/img/user.png' %}" class="img-circle elevation-2" alt="User Image">
                         </div>
                         <div class="info">
                             <a href="#" class="d-block">{{ user}}</a>
@@ -440,9 +440,9 @@
                             <!-- Brand Logo -->
                             <a href="" class="brand-link">
 
-                                <img src="{% static 'dist/img/virusx.png' %} " alt="AdminLTE Logo"
+                                <img src="{% static 'dist/img/logo.jpg' %} " alt="AdminLTE Logo"
                                     class="brand-image " style="opacity: .8">
-                                <span class="brand-text font-weight-light">SIGCE Student Panel</span>
+                                <span class="brand-text font-weight-light">SU Student Panel</span>
                             </a>
 
                             <!-- Sidebar -->
@@ -450,7 +450,7 @@
                                 <!-- Sidebar user panel (optional) -->
                                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                                     <div class="image">
-                                        <img src="{{ request.user.profile_pic}}" class="img-circle elevation-2"
+                                        <img src="{% static 'dist/img/user.png' %}" class="img-circle elevation-2"
                                             alt="User Image">
                                     </div>
                                     <div class="info">
